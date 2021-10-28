@@ -1,5 +1,8 @@
 <ActionBar>
-  <Label text="Home"></Label>
+  <Label text="My First App"></Label>
+  <SearchBar hint="Enter search term here ..." [text]="searchPhrase" (textChange)="onTextChanged($event)"
+    (clear)="onClear($event)" (submit)="onSubmit($event)">
+  </SearchBar>
 </ActionBar>
 
 <GridLayout>
